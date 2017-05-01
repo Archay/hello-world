@@ -1,5 +1,7 @@
-import java.util.Scanner;
-public class JavaApplication3 {
+Marks Calculator
+    
+    import java.util.Scanner;
+    public class JavaApplication3 {
 
     public static void main(String[] args) {
         Scanner MarkIn = new Scanner(System.in); //Init for scanner 
