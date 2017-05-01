@@ -1,3 +1,4 @@
+/#Marks Calculator
 import java.util.Scanner;
 public class JavaApplication3 {
 
