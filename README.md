@@ -1,2 +1,2 @@
 # hello-world
-This is a bunch of random shit I mad to try to learn Java
+This is a bunch of random shit I made to try to learn Java
