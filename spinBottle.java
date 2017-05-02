@@ -1,8 +1,7 @@
 
 Spinning A Bottle
-  
-  
-    public class NewMain {
+
+public class NewMain {
     import java.util.Scanner;
     import java.util.Random;
     public static void main(String[] args) {
@@ -21,3 +20,5 @@ Spinning A Bottle
        
         }
     }
+  
+    
