@@ -1,2 +1,5 @@
 # hello-world
-This is a bunch of random shit I made to try to learn Java
+Various solutions to exercises I found online
+
+Exercises:
+https://adriann.github.io/programming_problems.html
