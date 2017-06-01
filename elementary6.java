@@ -23,17 +23,20 @@ public class NewMain4 {
             case 1 :
                 out = Alg(n);
                 run = false;
+                System.out.print("Sum output is:");
                 break;
             case 2 :
                 out = Geo(n);
                 run = false;
+                System.out.print("Product output is:");
                 break;
             default :
                 System.out.println("Unknown command. Please try again");
                 run = true;
                 }
         }
-        System.out.println(out);
+        System.out.print(out);
+    }
     }
     public static int Alg(int n) {
         int sum;
