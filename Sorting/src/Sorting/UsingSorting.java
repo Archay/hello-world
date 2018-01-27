@@ -37,24 +37,31 @@ public class UsingSorting {
     }
 
     public static List<Integer> ssort(List<Integer> x) {
-        List<Integer> a = new ArrayList<>();
-        int smallest = 999999;
+        int start = 0;
+        int smallest = x.get(0);
         int index = 0;
-        while (x.size() > 1) {
-            for (int i = 0; i < x.size(); i++) {
-                if (x.get(i) < smallest) {
-                    smallest = x.get(i);
+        int temp;
+        while (start != x.size()) {
+            for (int i = start; i < x.size(); i++) {
+                System.out.println("Comparing " + smallest + " with " + x.get(i));
+                if (smallest > x.get(i)) {
+                    System.out.println("changing smallest from " + smallest + " to " + x.get(i));
                     index = i;
+                    smallest = x.get(i);
                 }
+                System.out.println(i);
             }
-            smallest = 999999;
-            a.add(x.get(index));
-            x.remove(index);
+            System.out.println("Swapping " + x.get(start) + " for " + x.get(index));
+            temp = x.get(start);
+            x.set(start, x.get(index));
+            x.set(index, temp);
+            System.out.println(x);
+            smallest = 999999999;
+            start++;
         }
-        a.add(x.get(0));
-        return a;
+        return x;
     }
-
+    
     public static void main(String[] args) {
         List<Integer> a = new ArrayList<>();
         int max = (int) (Math.random()*30+1);
@@ -62,7 +69,6 @@ public class UsingSorting {
             a.add((int) (Math.random() * 20));
         }
         System.out.println(a);
-        System.out.println(bsort(a));
         System.out.println(ssort(a));
     }
 }
